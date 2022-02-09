@@ -10,11 +10,17 @@ import SwiftUI
 struct MasterView: View {
     
     @AppStorage("isWelcomed") var isWelcomed:Bool = false
+    @State var showLoadingView:Bool = true
     
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        
+        VStack {
+            if isWelcomed {
+                CounterView()
+            } else {
+                WelcomeView()
+            }
+        }.animation(.easeInOut(duration: 0.5), value: isWelcomed)
     }
 }
 

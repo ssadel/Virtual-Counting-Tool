@@ -14,10 +14,14 @@
 		C2E4525D27B42BFA00E7E758 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E4525C27B42BFA00E7E758 /* MasterView.swift */; };
 		C2E4525F27B42C0300E7E758 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E4525E27B42C0300E7E758 /* WelcomeView.swift */; };
 		C2E4526127B42C1000E7E758 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E4526027B42C1000E7E758 /* Launch Screen.storyboard */; };
+		C2E4526327B42CEB00E7E758 /* GifStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E4526227B42CEB00E7E758 /* GifStruct.swift */; };
+		C2E4526527B42D0300E7E758 /* VideoStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E4526427B42D0300E7E758 /* VideoStruct.swift */; };
+		C2E4526727B42F4100E7E758 /* vid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C2E4526627B42F4100E7E758 /* vid.mp4 */; };
+		C2E4526927B4304E00E7E758 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E4526827B4304E00E7E758 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2E4524927B42BB500E7E758 /* Virtual-Counting-Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual-Counting-Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E4524927B42BB500E7E758 /* Virtual Counting Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Counting Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E4524C27B42BB500E7E758 /* Virtual_Counting_ToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virtual_Counting_ToolApp.swift; sourceTree = "<group>"; };
 		C2E4524E27B42BB500E7E758 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2E4525027B42BB600E7E758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,6 +29,10 @@
 		C2E4525C27B42BFA00E7E758 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C2E4525E27B42C0300E7E758 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		C2E4526027B42C1000E7E758 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C2E4526227B42CEB00E7E758 /* GifStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifStruct.swift; sourceTree = "<group>"; };
+		C2E4526427B42D0300E7E758 /* VideoStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStruct.swift; sourceTree = "<group>"; };
+		C2E4526627B42F4100E7E758 /* vid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid.mp4; sourceTree = "<group>"; };
+		C2E4526827B4304E00E7E758 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +57,7 @@
 		C2E4524A27B42BB500E7E758 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2E4524927B42BB500E7E758 /* Virtual-Counting-Tool.app */,
+				C2E4524927B42BB500E7E758 /* Virtual Counting Tool.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +65,7 @@
 		C2E4524B27B42BB500E7E758 /* Virtual-Counting-Tool */ = {
 			isa = PBXGroup;
 			children = (
+				C2E4526627B42F4100E7E758 /* vid.mp4 */,
 				C2E4524C27B42BB500E7E758 /* Virtual_Counting_ToolApp.swift */,
 				C2E4525B27B42BDD00E7E758 /* Managers */,
 				C2E4525A27B42BD100E7E758 /* Views */,
@@ -81,6 +90,7 @@
 				C2E4524E27B42BB500E7E758 /* ContentView.swift */,
 				C2E4525C27B42BFA00E7E758 /* MasterView.swift */,
 				C2E4525E27B42C0300E7E758 /* WelcomeView.swift */,
+				C2E4526827B4304E00E7E758 /* CounterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +98,8 @@
 		C2E4525B27B42BDD00E7E758 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C2E4526227B42CEB00E7E758 /* GifStruct.swift */,
+				C2E4526427B42D0300E7E758 /* VideoStruct.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -109,7 +121,7 @@
 			);
 			name = "Virtual-Counting-Tool";
 			productName = "Virtual-Counting-Tool";
-			productReference = C2E4524927B42BB500E7E758 /* Virtual-Counting-Tool.app */;
+			productReference = C2E4524927B42BB500E7E758 /* Virtual Counting Tool.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +164,7 @@
 			files = (
 				C2E4526127B42C1000E7E758 /* Launch Screen.storyboard in Resources */,
 				C2E4525427B42BB600E7E758 /* Preview Assets.xcassets in Resources */,
+				C2E4526727B42F4100E7E758 /* vid.mp4 in Resources */,
 				C2E4525127B42BB600E7E758 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E4526327B42CEB00E7E758 /* GifStruct.swift in Sources */,
 				C2E4525D27B42BFA00E7E758 /* MasterView.swift in Sources */,
+				C2E4526527B42D0300E7E758 /* VideoStruct.swift in Sources */,
+				C2E4526927B4304E00E7E758 /* CounterView.swift in Sources */,
 				C2E4524F27B42BB500E7E758 /* ContentView.swift in Sources */,
 				C2E4524D27B42BB500E7E758 /* Virtual_Counting_ToolApp.swift in Sources */,
 				C2E4525F27B42C0300E7E758 /* WelcomeView.swift in Sources */,
@@ -309,9 +325,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.siub.Virtual-Counting-Tool";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Virtual Counting Tool";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,9 +354,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.siub.Virtual-Counting-Tool";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Virtual Counting Tool";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
