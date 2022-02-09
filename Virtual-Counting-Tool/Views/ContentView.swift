@@ -8,10 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showAnimation:Bool = true
+    @State var animate:Bool = false
+    
     var body: some View {
         
-        MasterView()
-        
+        ZStack {
+            if showAnimation {
+                ZStack {
+                    Image("bg")
+                        .resizable()
+                        .scaledToFill()
+                        .ignoresSafeArea()
+                    Image("image")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.trailing)
+                        .frame(width: 200)
+                        .scaleEffect(animate ? 60 : 1)
+                }.ignoresSafeArea()
+                    .animation(.easeInOut(duration: 0.8), value: animate)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                            animate.toggle()
+                            DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+                                showAnimation.toggle()
+                            }
+                        }
+                    }
+            } else {
+                MasterView()
+            }
+        }.animation(.easeInOut, value: showAnimation)
     }
 }
 

@@ -18,13 +18,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UW6-8Z-734">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-jo-J0k">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerY" secondItem="UW6-8Z-734" secondAttribute="centerY" id="80m-Ny-XXN"/>
                             <constraint firstAttribute="trailing" secondItem="UW6-8Z-734" secondAttribute="trailing" id="FMg-Dh-SYg"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="87" id="TQn-PG-ecw"/>
                             <constraint firstItem="UW6-8Z-734" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UZk-xF-wTZ"/>
                             <constraint firstAttribute="bottom" secondItem="UW6-8Z-734" secondAttribute="bottom" id="ZUF-s5-iiy"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerX" secondItem="UW6-8Z-734" secondAttribute="centerX" id="hCd-Un-w3w"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="340" id="lWd-E8-8P3"/>
                             <constraint firstItem="UW6-8Z-734" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tmE-o6-1xi"/>
                         </constraints>
                     </view>
@@ -36,5 +43,6 @@
     </scenes>
     <resources>
         <image name="bg" width="1263" height="2524"/>
+        <image name="image" width="1526" height="891"/>
     </resources>
 </document>
