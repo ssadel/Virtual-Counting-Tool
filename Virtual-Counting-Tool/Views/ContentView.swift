@@ -26,7 +26,7 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(.trailing, 30)
                         .frame(width: 200)
-                        .scaleEffect(animate ? 60 : 1)
+                        .scaleEffect(animate ? 50 : 1)
                 }.ignoresSafeArea()
                     .animation(.easeInOut(duration: 0.8), value: animate)
                     .onAppear {

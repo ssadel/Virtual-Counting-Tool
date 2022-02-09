@@ -188,7 +188,7 @@ struct SheetView:View {
                 TextField("Set the Number", text: $stringValue)
                     .font(.title)
                     .keyboardType(.numberPad)
-                    .onReceive(Just(stringValue)) { _ in limitText(7) }
+                    .onReceive(Just(stringValue)) { _ in limitText(6) }
                     .padding()
                     .background(.white)
                     .foregroundColor(.orange)
