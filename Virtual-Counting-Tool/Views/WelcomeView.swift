@@ -18,7 +18,7 @@ struct WelcomeView: View {
         ZStack {
             AVPlayerControllerRepresented(player: player)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 900)
+                .frame(width: 950)
                 .clipped()
                 .ignoresSafeArea()
                 .onAppear {
