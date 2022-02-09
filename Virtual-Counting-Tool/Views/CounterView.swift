@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CounterView: View {
     
-    @State private var value:Int = 99999
+    @State private var value:Int = 0
     @State private var scaleValue:Double = 3
     
     @State private var showMenuItem1:Bool = false
@@ -92,8 +93,10 @@ struct CounterView: View {
                         .scaleEffect(scaleValue)
                         .shadow(radius: 3)
                         .onChange(of: value) { newValue in
-                            if newValue.description.count >= 6 {
+                            if newValue.description.count == 6 {
                                 scaleValue = 2.3
+                            } else if newValue.description.count > 7 {
+                                scaleValue = 1.7
                             }
                         }
                     
@@ -131,6 +134,7 @@ struct CounterView: View {
                         
                         Spacer()
                     }
+                    .padding(.bottom)
                     
                     //Spacer()
                 }
@@ -182,12 +186,15 @@ struct SheetView:View {
                 }
                 Spacer()
                 TextField("Set the Number", text: $stringValue)
+                    .font(.title)
                     .keyboardType(.numberPad)
+                    .onReceive(Just(stringValue)) { _ in limitText(7) }
                     .padding()
                     .background(.white)
                     .foregroundColor(.orange)
                     .cornerRadius(15)
                     .padding()
+                    .multilineTextAlignment(.center)
                     .onAppear {
                         stringValue = String(value)
                     }
@@ -201,9 +208,15 @@ struct SheetView:View {
                 }.buttonStyle(.borderedProminent)
                     .tint(.white)
                     .foregroundColor(.orange)
+                
 
                 Spacer()
             }
+        }
+    }
+    func limitText(_ upper: Int) {
+        if stringValue.count > upper {
+            stringValue = String(stringValue.prefix(upper))
         }
     }
 }
