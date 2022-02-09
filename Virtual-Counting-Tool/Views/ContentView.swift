@@ -24,7 +24,7 @@ struct ContentView: View {
                     Image("image")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(.trailing)
+                        .padding(.trailing, 30)
                         .frame(width: 200)
                         .scaleEffect(animate ? 60 : 1)
                 }.ignoresSafeArea()

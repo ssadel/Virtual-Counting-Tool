@@ -25,14 +25,14 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerY" secondItem="UW6-8Z-734" secondAttribute="centerY" id="80m-Ny-XXN"/>
                             <constraint firstAttribute="trailing" secondItem="UW6-8Z-734" secondAttribute="trailing" id="FMg-Dh-SYg"/>
-                            <constraint firstItem="QL8-jo-J0k" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="87" id="TQn-PG-ecw"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="340" id="SmU-Rv-e9h"/>
                             <constraint firstItem="UW6-8Z-734" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UZk-xF-wTZ"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerY" secondItem="UW6-8Z-734" secondAttribute="centerY" id="W5m-5n-MkB"/>
                             <constraint firstAttribute="bottom" secondItem="UW6-8Z-734" secondAttribute="bottom" id="ZUF-s5-iiy"/>
-                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerX" secondItem="UW6-8Z-734" secondAttribute="centerX" id="hCd-Un-w3w"/>
-                            <constraint firstItem="QL8-jo-J0k" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="340" id="lWd-E8-8P3"/>
                             <constraint firstItem="UW6-8Z-734" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tmE-o6-1xi"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="87" id="vbP-Yo-KJ3"/>
+                            <constraint firstItem="QL8-jo-J0k" firstAttribute="centerX" secondItem="UW6-8Z-734" secondAttribute="centerX" id="wQN-M2-dWo"/>
                         </constraints>
                     </view>
                 </viewController>
